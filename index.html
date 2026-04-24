@@ -39,6 +39,49 @@
        .btn-eco { background: var(--accent); color: var(--dark); font-weight: 600; border: none; padding: .7rem 2rem; border-radius: 50px; }
     .btn-eco:hover { background: #fff; color: var(--dark); }
 
+     /* ════════════════════════════════
+           MARQUEE / TRUST BAR
+        ════════════════════════════════ */
+            #trust-bar {
+                background: var(--green-dark);
+                padding: 1rem 0;
+                overflow: hidden;
+            }
+
+            .marquee-track {
+                display: flex;
+                gap: 3rem;
+                width: max-content;
+                animation: marquee 18s linear infinite;
+            }
+
+            .marquee-item {
+                display: flex;
+                align-items: center;
+                gap: .6rem;
+                color: var(--green-pale);
+                font-size: .85rem;
+                font-weight: 500;
+                white-space: nowrap;
+            }
+
+                .marquee-item .mi-dot {
+                    width: 5px;
+                    height: 5px;
+                    background: var(--accent);
+                    border-radius: 50%;
+                }
+
+            @keyframes marquee {
+                from {
+                    transform: translateX(0);
+                }
+
+                to {
+                    transform: translateX(-50%);
+                }
+            }
+
      /* ── Section titles ── */
     .sec-title { color: var(--dark); margin-bottom: .5rem; }
     .sec-line  { width: 50px; height: 3px; background: var(--accent); border-radius: 2px; margin: 0 auto 2.5rem; }
