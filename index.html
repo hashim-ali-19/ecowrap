@@ -33,6 +33,18 @@
       text-align: center;
     }
 
+      
+
+            @keyframes float {
+                0%,100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-8px);
+                }
+            }
+
          .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
     .hero p  { font-size: 1.1rem; opacity: .85; max-width: 550px; margin: 1rem auto 2rem; }
 
@@ -159,6 +171,8 @@
   <a href="#contact" class="btn btn-outline-light ms-3 rounded-pill px-4">Get a Quote</a>
     </div>
   
+    
+       
 </section>
  <!-- Features -->
   <section class="features" id="features">
